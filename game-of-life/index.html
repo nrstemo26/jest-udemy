@@ -103,6 +103,8 @@
   <script>
     const startButton = document.getElementById("start");
     const stopButton = document.getElementById("stop");
+    window.game.drawGrid(window.game.generate(50));
+    window.game.attachGridEventHandler();
 
     startButton.onclick = event => {
       startButton.setAttribute("disabled", true);
